@@ -1,0 +1,152 @@
+html {
+  scroll-padding-top: 130px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.menu li {
+  position: relative;
+}
+
+nav ul.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul.menu li:hover > .submenu {
+  display: block;
+}
+
+nav ul.submenu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  border-radius: 0 0 8px 8px;
+}
+
+nav ul.submenu li a {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+main {
+  padding-top: 130px;
+  width: 100%;
+  background-image: url("img/fondo.jpg");
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  image-rendering: auto;
+  background-color: black;
+}
+
+
+
+#ganadores h2 {
+  color: white;
+}
+
+section {
+  padding: 150px 40px;
+  min-height: 100vh;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+
+h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+h3 {
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 160px;
+  margin-bottom: 60px;
+}
+
+p {
+  margin: 10px 0 10px 30px;
+}
+
+.brasil { background-color: #009c3b; }
+.italia { background-color: #007fff; }
+.españa { background-color: #aa151b; }
+.alemania { background-color: #000000; }
+.francia { background-color: #0055a4; }
+.argentina { background-color: #75aadb; }
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.galeria img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+body, p, h2, h3, h4, li, a {
+  color: white;
+}
